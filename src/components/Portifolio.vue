@@ -6,7 +6,7 @@
     <v-card-text>
       <v-container grid-list-xl>
         <v-layout row wrap>
-          <v-flex xs12 md3 v-for="p in projects" :key="p.title">
+          <v-flex xs6 sm4 md3 v-for="p in projects" :key="p.title">
             <v-hover v-slot:default="{ hover }">
               <v-card :elevation="hover ? 12 : 2" :href="p.link" target="_blank">
                 <v-img class="white--text" :src="getProjectImage(p.image)" :alt="p.image" >

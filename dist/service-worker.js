@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.f1ea775f583e28257be430ad4661ae7b.js"
+  "/precache-manifest.1e7bb64f3748bec6ec7874c2737fb9a8.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "eldercarvalho"});
