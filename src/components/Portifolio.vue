@@ -1,5 +1,5 @@
 <template>
-  <v-card id="portifolio" flat class="section mb-5">
+  <v-card id="portifolio" class="section mb-5">
     <v-card-title class="mb-2" >
       Portifólio
     </v-card-title>
@@ -8,10 +8,10 @@
         <v-layout row wrap>
           <v-flex xs6 sm4 md3 v-for="p in projects" :key="p.title">
             <v-hover v-slot:default="{ hover }">
-              <v-card :elevation="hover ? 12 : 2" :href="p.link" target="_blank">
+              <v-card class="project" :elevation="hover ? 12 : 2" :href="p.link" target="_blank">
                 <v-img class="white--text" :src="getProjectImage(p.image)" :alt="p.image" >
                   <v-card-title class="align-end fill-height">
-                    <h1 class="headline">{{ p.title }}</h1>
+                    <h1 class="title">{{ p.title }}</h1>
                   </v-card-title>
                 </v-img>
               </v-card>
@@ -193,5 +193,14 @@ export default {
 </script>
 
 <style lang="scss">
-
+#portifolio {
+  .project {
+    .title {
+      background: rgba(#000, 0.5);
+      line-height: 1.3;
+      padding: 8px;
+      border-radius: 5px;
+    }
+  }
+}
 </style>

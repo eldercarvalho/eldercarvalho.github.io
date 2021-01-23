@@ -1,5 +1,5 @@
 <template>
-  <v-card id="skills" flat class="section mb-5">
+  <v-card id="skills" class="section mb-5">
     <v-card-title class="mb-2" >
       Habilidades
     </v-card-title>

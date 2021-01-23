@@ -1,6 +1,6 @@
 <template>
-  <v-card id="experience" flat class="section mb-5">
-    <v-card-title class="mb-2" >
+  <v-card id="experience" class="section mb-5">
+    <v-card-title class="mb-2">
       Onde estive
     </v-card-title>
     <v-card-text>
@@ -27,8 +27,15 @@ export default {
   data: () => ({
     experiences: [
       {
+        company: 'DOT Digital Group',
+        role: 'Desenvolvedor Front-end Pleno',
+        period: '18/2019 - Atual',
+        activities: 'Desenvolvimento e manutenção dos produtos front-end, definição de escopo, treinamento de equipe',
+        color: 'red lighten-2'
+      },
+      {
         company: 'nuCash',
-        role: 'Desenvolvedor JR',
+        role: 'Desenvolvedor Front-end Junior',
         period: '08/2017 - 07/2019',
         activities: 'Desenvolvimento e manutenção de sistemas front-end, nuCash Dashboard Corporante, aplicativo nuCash IOS, nuCash PDV desktop, elabaração de design system',
         color: 'red lighten-2'

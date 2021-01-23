@@ -51,7 +51,7 @@
     </v-app-bar>
 
     <v-content dark>
-      <v-container fluid>
+      <v-container class="main-container" fluid>
         
         <About />
 
@@ -102,15 +102,25 @@ export default {
 
 <style lang="scss">
 .v-navigation-drawer {
-  background-image: linear-gradient(to top, #0E79B2, #191923)
+  background: #191923 !important;
 }
+
 .menu {
   .v-list-item__title {
-    font-weight: lighter !important;
+    /* font-weight: lighter !important; */
   }
 }
+
+.main-container {
+  max-width: 1100px;
+}
+
 .section {
-  border: 1px solid rgba(#000, 0.2) !important;
+  border: 1px solid rgba(#000, 0.05) !important;
+}
+
+img {
+  max-width: 100%;
 }
 </style>
 
